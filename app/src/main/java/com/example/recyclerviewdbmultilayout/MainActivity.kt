@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity(), ListItemClickListener {
         horizontalDecoration.setDrawable(horizontalDivider!!)
         recyclerView.addItemDecoration(horizontalDecoration)
 
-        val adapter = MovieAdapter(mMovieList, this)
-        recyclerView.adapter = adapter
+        val movieAdapter = MovieAdapter(mMovieList, this)
+        recyclerView.adapter = movieAdapter
     }
 
     private val mMovieList = listOf(
